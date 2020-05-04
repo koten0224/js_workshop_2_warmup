@@ -1,29 +1,28 @@
-<p id="notice"><%= notice %></p>
+<table class="table table-bordered table-hover">
+  <tr>
+    <td>Name:</td>
+    <td><%= @product.name %></td>
+  </tr>
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
+  <tr>
+    <td>Money:</td>
+    <td><%= @product.money %></td>
+  </tr>
 
-<p>
-  <strong>Money:</strong>
-  <%= @product.money %>
-</p>
+  <tr>
+    <td>Currency:</td>
+    <td><%= @product.currency %></td>
+  </tr>
 
-<p>
-  <strong>Currency:</strong>
-  <%= @product.currency %>
-</p>
+  <tr>
+    <td>Start at:</td>
+    <td><%= @product.start_at %></td>
+  </tr>
 
-<p>
-  <strong>Start at:</strong>
-  <%= @product.start_at %>
-</p>
-
-<p>
-  <strong>End at:</strong>
-  <%= @product.end_at %>
-</p>
-
+  <tr>
+    <td>End at:</td>
+    <td><%= @product.end_at %></td>
+  </tr>
+</table>
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
